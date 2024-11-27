@@ -1,0 +1,142 @@
+/* Home Page */
+.home {
+    position: relative;
+    background-color: #000000; /* Azul de fundo */
+    color: white;
+    padding: 150px 0; /* Aumenta o espaço ao redor da seção (altura da cor azul) */
+    text-align: left; /* Alinha o texto à esquerda */
+    height: 80vh;
+    align-items: center;
+}
+
+.home h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.home h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Aumentar a imagem, ajustando a altura */
+.home .img-fluid {
+    max-height: 300px; /* Aumenta a altura da imagem */
+    border-radius: 50%; /* Deixa a imagem redonda */
+}
+
+.home .image{
+    width: 50%;
+    display: flex;
+    justify-items: center;
+}
+
+.home{
+    display: flex;
+}
+/* Container para o texto */
+.home .container {
+ /* Estilo de centralização com Flexbox */
+.centralizado {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    height: 100vh;           /* Altura igual à altura da tela */
+    text-align: center;      /* Alinha o texto ao centro, se necessário */
+}
+
+}
+
+.home .container h1,
+.home .container h3,
+.home .container p {
+    margin: 0;
+}
+
+/* Seção sobre mim */
+.sobre {
+    padding: 80px 0;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.sobre ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sobre ul li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilo para o formulário de contato */
+.contato {
+    padding: 80px 0;
+    background-color: #f8f9fa; /* Cor de fundo leve */
+}
+
+.contato .form-control {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.contato button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    background-color: #0056b3;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.2rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .home .img-fluid {
+        max-width: 150px; /* Ajustar o tamanho da imagem em dispositivos móveis */
+        max-height: 150px; /* Garantir altura proporcional em dispositivos móveis */
+        left: 50%; /* Alinhar imagem ao centro */
+        transform: translateX(-50%);
+        top: 20%;
+    }
+
+    .home h1 {
+        font-size: 2.5rem;
+    }
+
+    .home h3 {
+        font-size: 1.4rem;
+    }
+
+    .sobre h2 {
+        font-size: 2rem;
+    }
+
+    .sobre ul li {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Gustavo Reis</title>
+    <!-- Link para o Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="portifolio.css">
+</head>
+<body>
+    <!-- Home Page -->
+    <section class="home bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Gustavo Reis</h1>
+            <h3>Desenvolvedor Web Full-Stack</h3>
+            <p>Transformando ideias em soluções digitais inovadoras.</p>
+            
+        </div>
+
+        <div class="image">
+            <img src="images.jpg" alt="Imagem do Profissional" class="img-fluid rounded-circle mb-3" style="max-width: 550px;">
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre" class="sobre py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre Mim</h2>
+            <p class="text-center">Sou um estudante de ADS (Analise e Desenvolvimento de sistemas).Tenho 17 anos e estou no segundo ano do ensino médio.</p>
+            <div class="row mt-4">
+
+                    <h4>Minhas habilidades</h4>
+                    <ul>
+                        <li>uma pessoa com comunicação clara, meu principal objetivo é garantir que as ideias sejam transmitidas de forma simples, direta e sem ambiguidades. Tento sempre me expressar de forma que o outro compreenda facilmente, seja ao explicar um conceito técnico ou ao responder uma dúvida. Acredito que a comunicação eficaz é uma via de mão dupla, então busco não só ser claro ao falar, mas também atento ao que o outro está dizendo.</li>
+
+                        <li>Sou colaborativo, comprometido e sempre disposto a ajudar meus colegas. Valorizo a comunicação aberta, a adaptação às necessidades do time e o foco no objetivo comum. Busco contribuir com minhas habilidades e estou sempre pronto para apoiar o time, garantindo o sucesso do projeto e o aprendizado conjunto.
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Entre em Contato</h2>
+            <form action="enviar-email.php" method="POST">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Scripts do Bootstrap (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
